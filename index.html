@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="round"></h1>
+    <div class="play">
+      <div class="robot">
+        <div class="gesture">
+          <p class="title">?</p>
+        </div>
+        <p class="name">机器人</p>
+        <p class="score">
+          胜：0 | 负：0
+        </p>
+      </div>
+      <div class="player">
+        <div class="gesture">
+          <p class="title">?</p>
+        </div>
+        <p class="name">头号玩家</p>
+        <p class="score">
+          胜：0 | 负：0
+        </p>
+      </div>
+    </div>
+    <div class="current-result"></div>
+    <h1 class="total-result"></h1>
+    <button class="btn" id="begin-btn">开始下一回合</button>
+  </div>
+  <dialog id="select-dialog">
+    <form id="select-form">
+      <div>
+        <label>请选择要出的手势：</label>
+        <select name="gesture" id="select-gesture">
+          <option value="rock">石头</option>
+          <option value="scissor">剪刀</option>
+          <option value="paper">布</option>
+        </select>
+      </div>
+      <button id="select-btn" type="submit">确定</button>
+    </form>
+
+  </dialog>
+  <script src="./index.js"></script>
+</body>
+
+</html>
