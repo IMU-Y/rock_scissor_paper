@@ -102,7 +102,7 @@ const initGame = () => {
     const robotGesture = renderRobotGesture();
     selectDialog.close();
     resultGame(robotGesture, playerGesture);
-    if (currentRound >= 3) {
+    if (score.player_win >= 2 || score.robot_win >= 2 || currentRound >= 3) {
       if (score.player_win > score.robot_win) {
         judgeWinner("头号玩家");
       } else if (score.player_win < score.robot_win) {
